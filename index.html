@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Introducción a la Computación en la Nube (IaaS, PaaS, SaaS)</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --fondo: #f2f6f9;
+      --seccion: #ffffff;
+      --sec: #111111;
+      --texto: #333333;
+      --maxw: 900px;
+      --radius: 12px;
+    }
+
+    body{
+      margin:0;
+      font-family: "Open Sans", sans-serif;
+      background:var(--fondo);
+      color:var(--texto);
+    }
+
+    h1, h2, h3{
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .container{
+      max-width:var(--maxw);
+      margin:28px auto;
+      padding:20px;
+      background:var(--seccion);
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      border-radius:var(--radius);
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      border-bottom:1px solid #ddd;
+      padding-bottom:14px;
+      margin-bottom:16px;
+    }
+
+    header img{
+      width:75px;
+      height:75px;
+      border-radius:10px;
+      object-fit:cover;
+      border:2px solid rgba(0,0,0,0.1);
+    }
+
+    header h1{
+      margin:0;
+      color:var(--sec);
+      font-size:22px;
+    }
+
+    header p{
+      margin:0;
+      font-size:13px;
+      color:#666;
+    }
+
+    h2{
+      color:var(--sec);
+    }
+
+    figure img{
+      width:100%;
+      max-height:350px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    figcaption{
+      font-size:13px;
+      color:#555;
+      margin-top:4px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+    }
+
+    th,td{
+      border:1px solid #ddd;
+      padding:8px;
+      font-size:14px;
+    }
+
+    th{
+      background:#e9f6ff;
+    }
+
+    footer{
+      margin-top:20px;
+      padding-top:12px;
+      border-top:1px solid #ddd;
+      font-size:13px;
+      color:#666;
+      display:flex;
+      justify-content:space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <img src="img/cloud_computing.jpg" alt="Computación en la nube">
+      <div>
+        <h1>Introducción a la Computación en la Nube (IaaS, PaaS, SaaS)</h1>
+        <p>Sebastián Caballero López — COM22 Producción Multimedial</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Introducción</h2>
+      <p>
+        La computación en la nube es un modelo que permite acceder a recursos tecnológicos a través de Internet. 
+        En vez de tener servidores físicos, almacenamiento o software en un equipo local, los usuarios utilizan la 
+        nube para obtener servicios bajo demanda. Entre los modelos más utilizados se encuentran IaaS, PaaS y SaaS.
+      </p>
+    </section>
+
+    <section>
+      <h2>Conceptos principales</h2>
+      <ul>
+        <li><strong>IaaS:</strong> Infraestructura como servicio (máquinas virtuales, redes, discos).</li>
+        <li><strong>PaaS:</strong> Plataformas para crear y desplegar aplicaciones.</li>
+        <li><strong>SaaS:</strong> Software accesible directamente desde Internet.</li>
+        <li><strong>Escalabilidad:</strong> capacidad de aumentar recursos cuando sea necesario.</li>
+        <li><strong>Pago por uso:</strong> modelo económico flexible.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ventajas</h2>
+      <ul>
+        <li>Reduce el costo de hardware.</li>
+        <li>Permilia escalar fácilmente.</li>
+        <li>Acceso desde cualquier lugar.</li>
+      </ul>
+
+      <h2>Desventajas</h2>
+      <ul>
+        <li>Dependencia del proveedor.</li>
+        <li>Riesgos de seguridad.</li>
+        <li>Requiere conexión estable.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Imagen de referencia</h2>
+      <figure>
+        <img src="img/iaas-paas-saas.jpg" alt="Modelos IaaS PaaS SaaS">
+      </figure>
+    </section>
+
+    <section>
+      <h2>Comparación: IaaS, PaaS y SaaS</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>IaaS</th>
+            <th>PaaS</th>
+            <th>SaaS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Qué ofrece</td>
+            <td>Infraestructura</td>
+            <td>Plataforma</td>
+            <td>Software listo</td>
+          </tr>
+          <tr>
+            <td>Control del usuario</td>
+            <td>Alto</td>
+            <td>Medio</td>
+            <td>Bajo</td>
+          </tr>
+          <tr>
+            <td>Ejemplos</td>
+            <td>VMs, redes</td>
+            <td>Bases de datos gestionadas</td>
+            <td>Office 365, Google Drive</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Conclusiones</h2>
+      <p>
+        La nube ha transformado la forma en que se utilizan los recursos tecnológicos. IaaS ofrece infraestructura 
+        flexible, PaaS brinda herramientas para desarrollar aplicaciones, y SaaS permite usar software sin instalación. 
+        La elección depende de las necesidades, presupuesto y nivel de control deseado.
+      </p>
+    </section>
+
+    <footer>
+      <div>© Derechos reservados — Sebastián Caballero López</div>
+      <div>2025</div>
+    </footer>
+
+  </main>
+</body>
+</html>
